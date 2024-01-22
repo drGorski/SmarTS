@@ -1,4 +1,4 @@
-package pl.gdansk.ug.reducT;
+package pl.gdansk.ug.smarTS;
 
 import pl.gdansk.ug.abstractSC.AbstractSmartContract;
 import pl.gdansk.ug.abstractSC.AbstractTransaction;

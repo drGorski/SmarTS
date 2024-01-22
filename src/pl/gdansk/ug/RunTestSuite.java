@@ -3,7 +3,7 @@ package pl.gdansk.ug;
 import pl.gdansk.ug.abstractSC.AbstractSmartContract;
 import pl.gdansk.ug.concreteSC.InsuranceConclusionSC;
 import pl.gdansk.ug.concreteSC.SendEnergySC;
-import pl.gdansk.ug.reducT.AbstractTestSC;
+import pl.gdansk.ug.smarTS.AbstractTestSC;
 import pl.gdansk.ug.testSC.TestInsuranceConclusionSC;
 import pl.gdansk.ug.testSC.TestSendEnergySC;
 

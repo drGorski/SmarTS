@@ -1,7 +1,7 @@
 package pl.gdansk.ug.testSC;
 
 import pl.gdansk.ug.concreteSC.SendEnergyTransaction;
-import pl.gdansk.ug.reducT.AbstractTestSC;
+import pl.gdansk.ug.smarTS.AbstractTestSC;
 public class TestSendEnergySC extends AbstractTestSC {
     public void initiateTransactions(){
         transactions.clear();

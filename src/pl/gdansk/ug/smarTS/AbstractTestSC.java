@@ -1,4 +1,4 @@
-package pl.gdansk.ug.reducT;
+package pl.gdansk.ug.smarTS;
 
 import pl.gdansk.ug.abstractSC.AbstractSmartContract;
 import pl.gdansk.ug.abstractSC.AbstractTransaction;
@@ -9,8 +9,8 @@ public abstract class AbstractTestSC {
     public AbstractTestSC(){
         initiateTransactions();
     }
-    public abstract void initiateTransactions();
-    public void runTestSuite(AbstractSmartContract sC){
+    protected abstract void initiateTransactions();
+    public final void runTestSuite(AbstractSmartContract sC){
         AbstractRunTestCases.runTestSuite(sC, transactions);
     }
 }

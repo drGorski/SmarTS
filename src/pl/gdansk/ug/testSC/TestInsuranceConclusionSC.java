@@ -1,7 +1,7 @@
 package pl.gdansk.ug.testSC;
 
 import pl.gdansk.ug.concreteSC.InsuranceTransaction;
-import pl.gdansk.ug.reducT.AbstractTestSC;
+import pl.gdansk.ug.smarTS.AbstractTestSC;
 import java.time.LocalDate;
 public class TestInsuranceConclusionSC extends AbstractTestSC {
     public void initiateTransactions(){
