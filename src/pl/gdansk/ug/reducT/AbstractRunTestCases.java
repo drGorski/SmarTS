@@ -4,7 +4,7 @@ import pl.gdansk.ug.abstractSC.AbstractSmartContract;
 import pl.gdansk.ug.abstractSC.AbstractTransaction;
 
 import java.util.ArrayList;
-public class AbstractRunTestCases {
+abstract class AbstractRunTestCases {
     private static void runTest(AbstractSmartContract sC, AbstractTransaction tR, int trNumber, boolean expectedResult){
         boolean result = sC.checkSC(tR);
         boolean correct = result == expectedResult;
