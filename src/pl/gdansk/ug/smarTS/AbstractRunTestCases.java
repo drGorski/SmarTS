@@ -1,8 +1,5 @@
 package pl.gdansk.ug.smarTS;
 
-import pl.gdansk.ug.abstractSC.AbstractSmartContract;
-import pl.gdansk.ug.abstractSC.AbstractTransaction;
-
 import java.util.ArrayList;
 abstract class AbstractRunTestCases {
     private static void runTest(AbstractSmartContract sC, AbstractTransaction tR, int trNumber, boolean expectedResult){

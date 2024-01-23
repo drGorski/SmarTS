@@ -1,6 +1,6 @@
 package pl.gdansk.ug.concreteSC;
 
-import pl.gdansk.ug.abstractSC.AbstractTransaction;
+import pl.gdansk.ug.smarTS.AbstractTransaction;
 public class SendEnergyTransaction extends AbstractTransaction {
     private double quantity;
     private double sourceSurplus;

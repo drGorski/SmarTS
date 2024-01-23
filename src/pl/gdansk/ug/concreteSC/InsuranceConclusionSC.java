@@ -1,6 +1,6 @@
 package pl.gdansk.ug.concreteSC;
 
-import pl.gdansk.ug.abstractSC.AbstractSmartContract;
+import pl.gdansk.ug.smarTS.AbstractSmartContract;
 import java.time.LocalDate;
 import java.util.Arrays;
 

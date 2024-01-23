@@ -1,6 +1,6 @@
 package pl.gdansk.ug;
 
-import pl.gdansk.ug.abstractSC.AbstractSmartContract;
+import pl.gdansk.ug.smarTS.AbstractSmartContract;
 import pl.gdansk.ug.concreteSC.InsuranceConclusionSC;
 import pl.gdansk.ug.concreteSC.SendEnergySC;
 import pl.gdansk.ug.smarTS.AbstractTestSC;

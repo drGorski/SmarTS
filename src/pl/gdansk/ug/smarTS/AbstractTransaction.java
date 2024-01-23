@@ -1,4 +1,4 @@
-package pl.gdansk.ug.abstractSC;
+package pl.gdansk.ug.smarTS;
 
 public class AbstractTransaction {
 }
