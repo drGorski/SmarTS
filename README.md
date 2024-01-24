@@ -15,5 +15,9 @@ The abstract layer of the SmarTS package consists of four classes:
 
 The figure below presents the UML Class diagram with abstract classes in the SmarTS package, as well as example concrete smart contract and test classes.
 <p align="center">
-  <img src="UML-Class-diagram.png" alt="UML Class diagram" width="700">
+  <img src="UML-Class-diagram.png" alt="UML Class diagram" width="500">
 </p>
+
+## Running test suites
+
+The ``RunTestSuite`` class should be run to execute predefined test suites for two example smart contracts. 
