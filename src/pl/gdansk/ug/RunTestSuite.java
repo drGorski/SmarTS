@@ -1,24 +1,33 @@
 package pl.gdansk.ug;
 
 import pl.gdansk.ug.smarTS.AbstractSmartContract;
+import pl.gdansk.ug.smarTS.AbstractTestSC;
 import pl.gdansk.ug.concreteSC.InsuranceConclusionSC;
 import pl.gdansk.ug.concreteSC.SendEnergySC;
-import pl.gdansk.ug.smarTS.AbstractTestSC;
 import pl.gdansk.ug.testSC.TestInsuranceConclusionSC;
 import pl.gdansk.ug.testSC.TestSendEnergySC;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class RunTestSuite {
+    private static List<AbstractSmartContract> smartContractList = new ArrayList<>();
+    private static List<AbstractTestSC> testClassesList = new ArrayList<>();
+    private static void createSmartContracts(){
+        smartContractList.add(new SendEnergySC());
+        smartContractList.add(new InsuranceConclusionSC());
+    }
+    private static void createTestClasses(){
+        testClassesList.add(new TestSendEnergySC());
+        testClassesList.add(new TestInsuranceConclusionSC());
+    }
     public static void main(String[] args){
-        // declare variables
-        AbstractSmartContract sC;
-        AbstractTestSC testSC;
-        // run test suite for SendEnergySC
-        sC = new SendEnergySC();
-        testSC = new TestSendEnergySC();
-        testSC.runTestSuite(sC);
-        // run test suite InsuranceTransactionSC
-        sC = new InsuranceConclusionSC();
-        testSC = new TestInsuranceConclusionSC();
-        testSC.runTestSuite(sC);
+        // create smart contracts and test classes
+        createSmartContracts();
+        createTestClasses();
+        // run test suite for smart contracts
+        for (int i = 0; i < smartContractList.size(); i++ ) {
+            testClassesList.get(i).runTestSuite(smartContractList.get(i));
+        }
     }
 }
