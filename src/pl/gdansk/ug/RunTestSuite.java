@@ -25,7 +25,7 @@ public class RunTestSuite {
         // create smart contracts and test classes
         createSmartContracts();
         createTestClasses();
-        // run test suite for smart contracts
+        // run test suites for smart contracts
         for (int i = 0; i < smartContractList.size(); i++ ) {
             testClassesList.get(i).runTestSuite(smartContractList.get(i));
         }
